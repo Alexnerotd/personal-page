@@ -10,9 +10,9 @@ const MenuHidden = ({ isHidden, showMenuHidden }) => {
   return (
     <div
       id="container-menu-sm-hidden"
-      className={` ${isHidden ? "hidden" : ""} h-20 w-full`}
+      className={` ${isHidden ? "hidden" : ""} h-36 w-full`}
     >
-      <div className="container-nav h-full w-full flex items-center justify-around font-mono font-semibold text-xl text-white bg-black rounded-md">
+      <div className="container-nav h-full w-full flex items-center justify-around font-mono font-semibold text-2xl text-white bg-black rounded-md">
         <Link onClick={showMenuHidden} to={"about"}>
           About
         </Link>
@@ -35,7 +35,7 @@ function MenuSM() {
   };
 
   return (
-    <div id="container-menu-sm" className="h-auto w-auto border">
+    <div id="container-menu-sm" className="h-auto w-auto">
       <MenuHidden isHidden={hidden} showMenuHidden={showMenuHidden} />
       <nav className="h-32 w-full flex flex-row text-2xl font-semibold font-mono">
         <div

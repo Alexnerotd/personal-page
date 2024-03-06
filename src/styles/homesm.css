@@ -1,0 +1,18 @@
+#text-full:hover {
+    text-shadow: 0px 0px 20px rgb(0, 255, 255); /* Cyan intenso */
+}
+
+#text-stack:hover {
+    text-shadow: 0px 0px 20px rgb(0, 255, 0); /* Verde intenso */
+}
+
+#text-developer:hover {
+    text-shadow: 0px 0px 10px rgb(105, 105, 205); /* Azul intenso */
+}
+#section-main{
+    box-shadow: 10px 10px 0px black;
+}
+
+#section-main:active{
+    box-shadow: 5px 5px 5px black;
+}

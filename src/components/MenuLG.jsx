@@ -20,6 +20,12 @@ function MenuLG() {
           className="flex flex-1 items-center justify-around"
         >
           <Link
+            to={"/"}
+            className="hover:underline mr-5 active:underline focus:underline"
+          >
+            Home
+          </Link>
+          <Link
             to={"about"}
             className="hover:underline mr-5 active:underline focus:underline"
           >

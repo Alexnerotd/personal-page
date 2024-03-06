@@ -2,6 +2,10 @@ import { bool } from "prop-types";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
+import { FaHome } from "react-icons/fa";
+import { TiThMenu } from "react-icons/ti";
+import { IoClose } from "react-icons/io5";
+
 const MenuHidden = ({ isHidden, showMenuHidden }) => {
   return (
     <div
@@ -38,7 +42,9 @@ function MenuSM() {
           id="container-menu-left"
           className="flex flex-1 items-center justify-center"
         >
-          <Link to={"/"}>Home</Link>
+          <Link to={"/"}>
+            <FaHome size={50} />
+          </Link>
         </div>
         <div
           id="container-menu-center"
@@ -50,7 +56,9 @@ function MenuSM() {
           id="container-menu-right"
           className="flex flex-1 items-center justify-center"
         >
-          <button onClick={showMenuHidden}>Menu</button>
+          <button onClick={showMenuHidden}>
+            {hidden ? <TiThMenu size={50} /> : <IoClose size={50} />}
+          </button>
         </div>
       </nav>
     </div>

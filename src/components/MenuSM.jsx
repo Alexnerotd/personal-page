@@ -28,7 +28,7 @@ const MenuHidden = ({ isHidden, showMenuHidden }) => {
 };
 
 function MenuSM() {
-  const [hidden, setHidden] = useState();
+  const [hidden, setHidden] = useState(true);
 
   const showMenuHidden = () => {
     setHidden(!hidden);
